@@ -21,7 +21,6 @@ function sidebtnclick() {
  document.getElementById("nav-itemso").style.display = ("flex")
 
  document.getElementById("home_content").style.left = ("78px")
- document.getElementById("imgoo").style.marginRight = ("0px")
  document.getElementById("mid-navo").style.left = ("78px")
  
 
@@ -55,7 +54,6 @@ if (document.getElementById("sidebar").classList.contains("active")) {
  document.getElementById("nav-itemso").style.display = ("none")
 
  document.getElementById("home_content").style.left = ("240px")
- document.getElementById("imgoo").style.marginRight = ("210px")
  document.getElementById("mid-navo").style.left = ("240px")
  
 
@@ -82,8 +80,6 @@ if (document.getElementById("sidebar").classList.contains("active")) {
 }
 }
 
-
-
 // other function stoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooop
 
 function searchbtnclick() {
@@ -96,7 +92,6 @@ function searchbtnclick() {
    
  document.getElementById("home_content").style.left = ("78px")
  document.getElementById("home_content").style.marginRight = ("0px")
- document.getElementById("imgoo").style.marginRight = ("0px")
  document.getElementById("mid-navo").style.left = ("78px")
     
    
@@ -131,7 +126,6 @@ if (document.getElementById("sidebar").classList.contains("active")) {
 
  document.getElementById("home_content").style.left = ("240px")
  document.getElementById("home_content").style.marginRight = ("210px")
- document.getElementById("imgoo").style.marginRight = ("210px")
  document.getElementById("mid-navo").style.left = ("240px")
     
    
@@ -158,9 +152,3 @@ if (document.getElementById("sidebar").classList.contains("active")) {
 }
 }
    
-   
-   
-
-
-
-
