@@ -313,7 +313,7 @@ span {
  position: absolute;
 
  width: 100% ;
- height: 100vh ;
+ height: 640vh ;
 
  display: flex;
  align-items: center;
@@ -335,7 +335,7 @@ span {
 /* the content */
 
 .container-home {
- height: 500vh;
+ height: 640vh;
 }
 
 
@@ -381,21 +381,51 @@ transition: all 0.5s ease;
 
 
 
+
 /* home content end */
 
 
+/* footer */
 
+.FooterWeb {
+ height: 60px;
+ width: 100%;
+ background-color: #1d1b31;
+ padding: 10px 6px;
+ color: #fff;
+ transition: all 0.3s ease;
+}
 
+.copyright a{
+ font-size: 15px;
+ margin-left: 60px;
+ text-decoration: none;
+ color: #fff;
+ float: left;
+ line-height: 50px;
+ transition: all 0.3s ease-in-out;
+}
 
+.copyright a:hover {
+ color: #bfbae3;
+}
 
+.toopbtn {
+ float: right;
+ width: 80px;
+ height: 40px;
+ margin-right: 100px;
+ border: none;
+ border-radius: 12px;
+ background-color: #1d1b31;
+ color: #fff;
+ transition: all 0.3s ease-in-out;
+}
 
+.toopbtn:hover {
+ background-color: #bfbae3;
 
-
-
-
-
-
-
+}
 
 
 

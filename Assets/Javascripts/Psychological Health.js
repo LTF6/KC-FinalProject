@@ -45,7 +45,8 @@ function sidebtnclick() {
  document.getElementById("job").style.display = ("none")
  document.getElementById("log_out").style.display = ("none")
 
- 
+ document.getElementById("topbtno").style.marginRight = ("100px")
+
 if (document.getElementById("sidebar").classList.contains("active")) {
 
  document.getElementById("logo-name").style.color = ("white")
@@ -77,6 +78,9 @@ if (document.getElementById("sidebar").classList.contains("active")) {
  document.getElementById("name").style.display = ("flex")
  document.getElementById("job").style.display = ("flex")
  document.getElementById("log_out").style.display = ("flex")
+
+ document.getElementById("topbtno").style.marginRight = ("300px")
+
 }
 }
 
@@ -116,6 +120,7 @@ function searchbtnclick() {
  document.getElementById("job").style.display = ("none")
  document.getElementById("log_out").style.display = ("none")
    
+ document.getElementById("topbtno").style.marginRight = ("100px")
     
 if (document.getElementById("sidebar").classList.contains("active")) {
    
@@ -149,6 +154,9 @@ if (document.getElementById("sidebar").classList.contains("active")) {
  document.getElementById("name").style.display = ("flex")
  document.getElementById("job").style.display = ("flex")
  document.getElementById("log_out").style.display = ("flex")
+
+ document.getElementById("topbtno").style.marginRight = ("300px")
+
 }
 }
    

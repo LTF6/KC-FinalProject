@@ -309,3 +309,78 @@ span {
 
 /* home content */
  
+
+.home_content {
+ position: absolute;
+
+ width: 100% ;
+ height: 640vh ;
+
+ display: flex;
+ align-items: center;
+ text-align: center;
+ flex-direction: column;
+
+ margin-right: 300px;
+ left: 78px;
+ 
+ transition: all 0.55s ease;
+ color: #11101d;
+}
+
+.textoo {
+ font-size: 25px;
+ font-weight: 500;
+}
+
+/* the content */
+
+.container-home {
+ height: 640vh;
+}
+
+/* home content end */
+
+
+/* footer */
+
+.FooterWeb {
+ height: 60px;
+ width: 100%;
+ background-color: #1d1b31;
+ padding: 10px 6px;
+ color: #fff;
+
+ transition: all 0.3s ease;
+}
+
+.copyright a{
+ font-size: 15px;
+ margin-left: 60px;
+ text-decoration: none;
+ color: #fff;
+ float: left;
+ line-height: 50px;
+ transition: all 0.3s ease-in-out;
+}
+
+.copyright a:hover {
+ color: #bfbae3;
+}
+
+.toopbtn {
+ float: right;
+ width: 80px;
+ height: 40px;
+ margin-right: 100px;
+ border: none;
+ border-radius: 12px;
+ background-color: #1d1b31;
+ color: #fff;
+ transition: all 0.3s ease-in-out;
+}
+
+.toopbtn:hover {
+ background-color: #bfbae3;
+
+}
