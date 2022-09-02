@@ -313,7 +313,7 @@ span {
  position: absolute;
 
  width: 100% ;
- height: 450vh ;
+ height: 758vh ;
 
  display: flex;
  align-items: center;
@@ -323,7 +323,7 @@ span {
  margin-right: 300px;
  left: 78px;
  
- transition: all 0.55s ease;
+ transition: all 0.5s ease;
  color: #11101d;
  background-color: #f3f7fa;
 }
@@ -331,7 +331,7 @@ span {
 /* the content */
 
 .container-home {
- height: 640vh;
+ height: 60vh;
 }
 
 .container-t3ref {
@@ -343,7 +343,7 @@ span {
  border-radius: 12px;
 
  margin: 50px;
- margin-right: 40px;
+ margin-right: 220px;
  padding: 15px;
 
  align-items: center;
@@ -369,6 +369,17 @@ span {
  font-size: 0px;
  list-style: none;
  text-align: right;
+ transition: all 0.8s ease-in-out;
+}
+
+.opac a {
+ text-decoration: none;
+ color: #11101d;
+ transition: all 0.2s ease-in-out;
+}
+
+.opac a:hover {
+ color: #bfbae3;
 }
 
 .place {
@@ -386,14 +397,9 @@ span {
  font-size: 30px;
 }
 
-
-
 .container-t3ref:hover {
- width: 1400px;
+ width: 1350px;
 }
-
-
-
 
 .container-t3ref p {
  font-size: 30px;
@@ -432,22 +438,79 @@ span {
  color: #11101d;
  text-align: right;
  letter-spacing: 1px;
- transition: all 0.3s ease-in-out;
+ transition: all 0.1s ease-in-out;
 }
 
 .con-num2  ul  a:hover{
  color: #bfbae3;
 }
 
-/* 
+
 .hr-line {
  border: solid 1px #11101d;
  width: 1580px;
  margin-bottom: 1px;
  transition: all 0.5s ease-in-out;
 } 
-*/
 
+
+
+.container-t3refo {
+ height: 550px;
+ width: 1350px;
+ background-color: #fff;
+ color: #11101d;
+ border: solid 3px #1d1b31;
+ border-radius: 12px;
+
+ margin: 50px;
+ margin-right: 100px;
+ padding: 15px;
+
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+
+ scale: 1;
+
+ direction: rtl;
+ transition: all 0.9s ease;
+}
+
+.container-t3refo:hover {
+ scale: 1.05;
+ border: solid 3px #bfbae3;
+}
+
+
+.container-t3refo ul {
+ margin-right: 15px;
+ padding: 5px;
+ font-size: 30px;
+ list-style: none;
+ text-align: right;
+}
+.container-t3refo h3 {
+ text-align: center;
+}
+
+
+
+#i1out5 {
+ scroll-margin-top: 100px;
+}
+#i2out5 {
+ scroll-margin-top: 100px;
+}
+#i3out5 {
+ scroll-margin-top: 100px;
+}
+#i4out5 {
+ scroll-margin-top: 100px;
+}
+#i5out5 {
+ scroll-margin-top: 100px;
+}
 
 
 /* home content end */
@@ -462,8 +525,8 @@ span {
  background-color: #1d1b31;
  padding: 10px 6px;
  color: #fff;
-
- transition: all 0.3s ease;
+ left: 78px;
+ transition: all 0.55s ease;
 }
 
 .copyright a{

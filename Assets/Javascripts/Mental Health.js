@@ -46,6 +46,9 @@ function sidebtnclick() {
  document.getElementById("log_out").style.display = ("none")
 
  document.getElementById("topbtno").style.marginRight = ("100px")
+
+ document.getElementById("hr1").style.marginRight = ("100px")
+ document.getElementById("hr2").style.marginRight = ("100px")
  
 if (document.getElementById("sidebar").classList.contains("active")) {
 
@@ -80,6 +83,9 @@ if (document.getElementById("sidebar").classList.contains("active")) {
  document.getElementById("log_out").style.display = ("flex")
 
  document.getElementById("topbtno").style.marginRight = ("300px")
+
+ document.getElementById("hr1").style.marginRight = ("280px")
+ document.getElementById("hr2").style.marginRight = ("280px")
 
 }
 }
@@ -121,6 +127,9 @@ function searchbtnclick() {
  document.getElementById("log_out").style.display = ("none")
    
  document.getElementById("topbtno").style.marginRight = ("100px")
+
+ document.getElementById("hr1").style.marginRight = ("100px")
+ document.getElementById("hr1").style.marginRight = ("100px")
     
 if (document.getElementById("sidebar").classList.contains("active")) {
    
@@ -156,6 +165,9 @@ if (document.getElementById("sidebar").classList.contains("active")) {
  document.getElementById("log_out").style.display = ("flex")
 
  document.getElementById("topbtno").style.marginRight = ("300px")
+
+ document.getElementById("hr1").style.marginRight = ("280px")
+ document.getElementById("hr2").style.marginRight = ("280px")
 
 }
 }
