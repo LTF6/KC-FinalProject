@@ -315,7 +315,7 @@ span {
  position: absolute;
 
  width: 100% ;
- height: 200vh ;
+ height: 600vh ;
 
  display: flex;
  align-items: center;
@@ -432,7 +432,67 @@ span {
  border: solid 1px #11101d;
  width: 1580px;
  margin-bottom: 1px;
+ transition: all 0.5s ease-in-out;
 }
+
+.con-num3 {
+ width: 100%;
+ background-color: #fff;
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ margin-right: 75px;
+ scroll-margin-right: 1px;
+}
+
+.con-num3 ul {
+ list-style: none;
+ float: right;
+ font-size: 30px;
+ margin-bottom: 5px;
+ text-align: right;
+ margin-right: 10px;
+ color: #1d1b31;
+}
+
+.con-num3 ul a {
+ text-decoration: none;
+ color: #11101d;
+ text-align: right;
+ letter-spacing: 1px;
+ transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+#i1out6 {
+ scroll-margin-top: 100px;
+}
+#i2out6 {
+ scroll-margin-top: 100px;
+}
+#i3out6 {
+ scroll-margin-top: 100px;
+}
+#i4out6 {
+ scroll-margin-top: 100px;
+}
+#i5out6 {
+ scroll-margin-top: 100px;
+}
+#i6out6 {
+ scroll-margin-top: 100px;
+}
+
+
+
+
 
 /* home content end */
 
