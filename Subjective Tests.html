@@ -12,8 +12,8 @@
   <link rel="shortcut icon" href="./Assets/imgs/Profile imgs/logo.png" type="image/x-icon">
 
  <!-- Css + Javascripts -->
-  <link rel="stylesheet" href="./Assets/Css/Consultation Request.css">
-  <script src="./Assets/Javascripts/Consultation Request.js"></script>
+  <link rel="stylesheet" href="./Assets/Css/Subjective Tests.css">
+  <script src="./Assets/Javascripts/Subjective Tests.js"></script>
 
  <!-- lib Links  --> <!-- Only for icons - font -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -178,7 +178,421 @@
 
 <div id="home_content" class="home_content">
 
+<div class="con-ques">
+
+<div class="conso">
+
+<h3 class="block">( اختبارات التقييم الذاتي)</h3>
 <br>
+
+
+<!-- divo flex -->
+<div class="flex">
+
+
+<div class="boxs">
+<img src="./Assets/images/Subjective Tests/000.png" width="120px" alt="">
+ <h4 class="bottom2">حاول عدم ترك اي اجابة </h4>
+</div>
+
+<!--  -->
+
+<div class="boxs">
+<img src="./Assets/images/Subjective Tests/001.png" width="120px"  alt="">
+<br>
+<h4 class="bottom"> الاختبار يأخذ اقل من 5 دقائق</h4>
+</div>
+
+<!--  -->
+
+<div class="boxs">
+<img src="./Assets/images/Subjective Tests/002.png" width="120px" alt="">
+<h4>ادخل معلوماتك بشكل صحيح </h4>
+</div>
+
+
+</div>
+<!-- flex div  end-->
+<br>
+
+<ul>
+
+<li><a href="">- اختبار التقييم الذاتي للاكتئاب</a></li>
+<li><a href="">- اختبار التقييم الذاتي لادمان المخدرات</a></li>
+<li><a href="">- اختبار التقييم الذاتي للراهاب</a></li>
+</ul>
+
+
+</div>
+
+</div>
+<!-- stop -->
+
+<div class="con-ques">
+<div class="tests">
+ <h1>( اختبار الاكتئاب )</h1>
+ <p>  إذا بدأت المشاعر السلبية والحزن في التأثير على حياتك اليومية وعلاقاتك بشكل سلبي، أجب عن هذا الاختبار لتحديد أفضل الطرق المناسبة لك لعلاج الاكتئاب </p>
+ <p> ملاحظة : الأسئلة الواردة في الفورم تتطلب الصدق من أجل تحقيق أدق النتائج حدد الإجابة الأكثر ملاءمة لكل سؤال </p>
+ <button onclick="showques()">الاختبار</button> 
+</div>
+</div>
+
+<!-- ---- -->
+
+<div class="con-ques">
+<div class="tests">
+ <h1>( اختبار ادمان المخدرات )</h1>
+ <p> إذا ترك إدمان المخدرات دون علاج فسيكون له القدرة على تدمير حياة المدمن وكذلك حياة الأشخاص المهتمين به, فأجب عن هذا الاختبار لتحديد أفضل الطرق المناسبة لك لعلاج الإدمان </p>
+ <p> ملاحظة : الأسئلة الواردة في الفورم تتطلب الصدق من أجل تحقيق أدق النتائج حدد الإجابة الأكثر ملاءمة لكل سؤال </p>
+ <button onclick="showques()">الاختبار</button>
+</div>
+</div>
+
+<!-- ---- -->
+
+<div class="con-ques">
+<div class="tests">
+ <h1>( اختبار الرهاب )</h1>
+ <p>صمم اختبار الرهاب الاجتماعي لقياس مستوى الخجل والخوف في المواقف الاجتماعية، فالرهاب الاجتماعي يعقد علاقاتك الشخصية وكذلك دراستك وعملك، يجعلك تتجنب الكثير من المواقف الاجتماعية وتبتعد عن التفاعل الاجتماعي، واختبار الرهاب الاجتماعي سيساعدك على معرفة درجة الخوف الاجتماعي لديك</p>
+ <button onclick="showques()">الاختبار</button>
+</div>
+</div>
+
+<!-- عنوان - ريط الفورم -->
+
+<div class="questions-container-tst7">
+<section  class="tst7-container" id="questions-form">
+ <p class="tst7-h1q">( اختبار الاكتئاب )</p>
+ <i onclick="unshowques()" class='bx bx-x  placex'></i>
+ <br>
+ <form class="" action="https://formsubmit.co/serotonin.finalproject@gmail.com" method="POST" >
+ 
+<!-- سؤال 1 -->
+<section id="quests1">
+
+ <p class="tst7-h1q">اشعر الحزن</p>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question1" id="question1-1" value=" أبدًا" >
+   <label class="tst7-label1" for="question1-1"> أبدًا</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question1" id="question1-2" value=" نادرًا" >
+   <label for="question1-2"> نادرًا</label>
+</div>
+
+<div class="diso-flexo  tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question1" id="question1-3" value=" أحيانًا" >
+   <label for="question1-3"> أحيانًا</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question1" id="question1-4" value=" غالبًا" >
+   <label for="question1-4"> غالبًا</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question1" id="question1-5" value=" في أغلب الأحيان" >
+   <label for="question1-5"> في أغلب الأحيان</label>
+</div>
+</section>
+<!-- خلص سؤال 1 -->
+
+
+<!-- سؤال 2 -->
+<section id="quests2">
+
+ <p class="tst7-h1q"> التفكير بالمستقبل يجعلني أشعر باليأس</p>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question2" id="question2-1" value=" أبدًا" >
+   <label class="tst7-label1" for="question2-1">أبدًا </label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question2" id="question2-2" value=" نادرًا" >
+   <label for="question2-2">نادرًا</label>
+</div>
+
+<div class="diso-flexo  tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question2" id="question2-3" value=" أحيانًا" >
+   <label for="question2-3">أحيانًا</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question2" id="question2-4" value=" غالبًا" >
+   <label for="question2-4">غالبًا</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question2" id="question2-5" value=" في أغلب الأحيان " >
+   <label for="question2-5">  في أغلب الأحيان</label>
+</div>
+
+</section>
+<!-- خلص سؤال 2 -->
+
+
+<!-- سؤال 3 -->
+<section id="quests3">
+
+ <p class="tst7-h1q"> أشعر بالذنب وتأنيب الضمير</p>
+  
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question3" id="question3-1" value=" أبدًا" >
+   <label class="tst7-label1" for="question3-1"> أبدًا </label>
+</div>
+  
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question3" id="question3-2" value=" نادرًا" >
+   <label for="question3-2"> نادرًا</label>
+</div>
+  
+<div class="diso-flexo  tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question3" id="question3-3" value=" أحيانًا" >
+   <label for="question3-3"> أحيانًا</label>
+</div>
+  
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question3" id="question3-4" value=" غالبًا" >
+   <label for="question3-4"> غالبًا</label>
+</div>
+  
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question3" id="question3-5" value="  في أغلب الأحيان  " >
+   <label for="question3-5">  في أغلب الأحيان</label>
+</div>
+</section>
+<!-- خلص سؤال 3 -->
+
+
+<!-- سؤال 4 -->
+<section id="quests4">
+
+ <p class="tst7-h1q">أنا سريع الغضب وسهل الاستفزاز</p>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question4" id="question4-1" value=" أبدًا" >
+   <label class="tst7-label1" for="question4-1"> أبدًا </label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question4" id="question4-2" value=" نادرًا" >
+   <label for="question4-2"> نادرًا</label>
+</div>
+   
+<div class="diso-flexo  tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question4" id="question4-3" value=" أحيانًا" >
+   <label for="question4-3"> أحيانًا</label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question4" id="question4-4" value=" غالبًا" >
+   <label for="question4-4"> غالبًا</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question4" id="question4-5" value="  في أغلب الأحيان " >
+   <label for="question4-5"> في أغلب الأحيان</label>
+</div>
+
+</section>
+<!-- خلص سؤال 4 -->
+
+
+<!-- سؤال 5 -->
+<section id="quests5">
+
+ <p class="tst7-h1q">أجد صعوبة كبيرة في تحفيز نفسي</p>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question5" id="question5-1" value=" أبدًا" >
+   <label class="tst7-label1" for="question5-1"> أبدًا </label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question5" id="question5-2" value=" نادرًا" >
+   <label for="question5-2"> نادرًا</label>
+</div>
+   
+<div class="diso-flexo  tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question5" id="question4-3" value=" أحيانًا" >
+   <label for="question4-3"> أحيانًا</label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question4" id="question5-4" value=" غالبًا" >
+   <label for="question5-4"> غالبًا</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question5" id="question5-5" value="  في أغلب الأحيان " >
+   <label for="question5-5"> في أغلب الأحيان</label>
+</div>
+
+</section>
+<!-- خلص سؤال 5 -->
+
+<!-- سؤال 6 -->
+<section id="quests6">
+
+ <p class="tst7-h1q"> روتين نومي غير منتظم</p>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question6" id="question6-1" value=" أبدًا" >
+   <label class="tst7-label1" for="question6-1"> أبدًا </label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question6" id="question6-2" value=" نادرًا" >
+   <label for="question6-2"> نادرًا</label>
+</div>
+   
+<div class="diso-flexo  tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question6" id="question6-3" value=" أحيانًا" >
+   <label for="question6-3"> أحيانًا</label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question6" id="question6-4" value=" غالبًا" >
+   <label for="question6-4"> غالبًا</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question4" id="question6-5" value="  في أغلب الأحيان " >
+   <label for="question6-5"> في أغلب الأحيان</label>
+</div>
+
+</section>
+<!-- خلص سؤال 6 -->
+
+
+<!-- سؤال 7 -->
+<section id="quests7">
+
+ <p class="tst7-h1q"> ليس لدي طاقة لعمل أي شيء </p>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question7" id="question7-1" value=" أبدًا" >
+   <label class="tst7-label1" for="question7-1"> أبدًا </label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question7" id="question7-2" value=" نادرًا" >
+   <label for="question7-2"> نادرًا</label>
+</div>
+   
+<div class="diso-flexo  tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question7" id="question7-3" value=" أحيانًا" >
+   <label for="question7-3"> أحيانًا</label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question7" id="question7-4" value=" غالبًا" >
+   <label for="question7-4"> غالبًا</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question7" id="question7-5" value="  في أغلب الأحيان " >
+   <label for="question7-5"> في أغلب الأحيان</label>
+</div>
+
+</section>
+<!-- خلص سؤال 7 -->
+
+
+<!-- سؤال 8 -->
+<section id="quests8">
+
+ <p class="tst7-h1q">يوجد تغيير دائم في شهيتي</p>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question8" id="question8-1" value=" أبدًا" >
+   <label class="tst7-label1" for="question8-1"> أبدًا </label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question8" id="question8-2" value=" نادرًا" >
+   <label for="question8-2"> نادرًا</label>
+</div>
+   
+<div class="diso-flexo  tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question8" id="question8-3" value=" أحيانًا" >
+   <label for="question8-3"> أحيانًا</label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question8" id="question8-4" value=" غالبًا" >
+   <label for="question8-4"> غالبًا</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question8" id="question8-5" value="  في أغلب الأحيان " >
+   <label for="question8-5"> في أغلب الأحيان</label>
+</div>
+
+</section>
+<!-- خلص سؤال 8 -->
+
+
+<!-- سؤال 9 -->
+<section id="quests9">
+
+ <p class="tst7-h1q"> هل لديك افكار في الانتحار</p>
+  
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question9" id="question9-1" value=" أبدًا" >
+   <label class="tst7-label1" for="question9-1"> أبدًا </label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question9" id="question9-2" value=" نادرًا" >
+   <label for="question9-2"> نادرًا</label>
+</div>
+   
+<div class="diso-flexo  tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question9" id="question9-3" value=" أحيانًا" >
+   <label for="question9-3"> أحيانًا</label>
+</div>
+   
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question9" id="question9-4" value=" غالبًا" >
+   <label for="question9-4"> غالبًا</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question9" id="question9-5" value="  في أغلب الأحيان " >
+   <label for="question9-5"> في أغلب الأحيان</label>
+</div>
+
+</section>
+<!-- خلص سؤال 9 -->
+<br>
+
+<!-- next button -->
+<h3 id="nxt-btno-hio"  onclick="Next1()" class="btn-tst7">Next</h3>
+<h3 id="nxt-btno-hio2" onclick="Next2()" class="btn-tst7">Next</h3>
+<h3 id="nxt-btno-hio3" onclick="Next3()" class="btn-tst7">Next</h3>
+<h3 id="nxt-btno-hio4" onclick="Next4()" class="btn-tst7">Next</h3>
+<h3 id="nxt-btno-hio5" onclick="Next5()" class="btn-tst7">Next</h3>
+
+<!--  next button ends -->
+
+<!-- contact us -->
+<div id="contact-bar-tst" class="items.cen.tst7">
+
+  <h2 class="tst-txt-cen">ادخل معلوماتك بالاسفل</h2>
+<br>
+  <input name="Person Name" class="Name-bar tst-con7" type="text" placeholder="Your Name" >
+  <input name="Personal Email" class="Name-bar tst-con7" type="email" placeholder="Your Email" >
+  <input name="Personal Number" class="Name-bar tst-con7" type="number" placeholder="Your Number" >
+  <button onclick="unshowques()" onclick="consolelog()"  class="btn-tst7" type="submit">Send Email</button>
+</div>
+<!-- contact us end -->
+</form>
+</section>
+</div>
 
 
 <!-- Footer Div -->
