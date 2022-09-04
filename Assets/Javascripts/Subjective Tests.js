@@ -88,7 +88,7 @@ if (document.getElementById("sidebar").classList.contains("active")) {
 
 function searchbtnclick() {
  document.getElementById("sidebar").classList = ("sidebar active")
-   
+  
  document.getElementById("logo-name").style.color = ("#11101d")
  document.getElementById("links_con").style.color = ("#11101d")
 
@@ -164,6 +164,9 @@ if (document.getElementById("sidebar").classList.contains("active")) {
 //  the real work
 function showques() {
  document.getElementById("questions-form").style.display = ( "block" )
+ document.getElementById("foro4").style.opacity = ( "1" )
+ document.getElementById("back-black").style.opacity = ("0.4")
+ document.getElementById("back-black1").style.opacity = ("0.4")
 }
 
 // next Function
@@ -210,7 +213,37 @@ function Next4() {
 
 function unshowques() {
  document.getElementById("questions-form").style.display = ( "none" )
+
+ Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: ' Email has been sent successfully ',
+  showConfirmButton: false,
+  timer: 2000
+ } )
+ 
+ document.getElementById("back-black").style.opacity = ("1")
+ document.getElementById("back-black1").style.opacity = ("1")
+
 }
+
+function unshowques1() {
+ document.getElementById("questions-form").style.display = ( "none" )
+ 
+ Swal.fire({
+  position: 'center',
+  icon: 'error',
+  title: ' Email has been stopped ',
+  showConfirmButton: false,
+  timer: 1500
+ } )
+
+ 
+ document.getElementById("back-black").style.opacity = ("1")
+ document.getElementById("back-black1").style.opacity = ("1")
+ 
+}
+
 
 function consolelog() {
     console.log("js is workin ?");

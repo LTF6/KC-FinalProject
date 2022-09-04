@@ -14,6 +14,21 @@ Body {
  overflow-x: hidden;
 }
 
+#back-black {
+ height: 100% ;
+ width: 100%;
+
+ opacity: 1;
+}
+
+#back-black1 {
+ height: 100% ;
+ width: 100%;
+
+ opacity: 1;
+ display: block;
+}
+
 /* Every thing End */
 
 
@@ -484,6 +499,7 @@ margin-top: 13px;
 }
 
 .tst7-container {
+ z-index: 99;
  position: fixed;
  top: 25%;
  left: 42%;
@@ -598,15 +614,24 @@ background-color: #bfbae3;
  display: none;
 }
    
-#nxt-btno-hio5 {
- display: none;
-}
 
 #contact-bar-tst{
  display: none;
 }
 /* ------------------ */
 
+
+#itesto1 {
+ scroll-margin-top: 100px;
+}
+
+#itesto2 {
+ scroll-margin-top: 100px;
+}
+
+#itesto3 {
+ scroll-margin-top: 100px;
+}
 
 
 /* home content end */

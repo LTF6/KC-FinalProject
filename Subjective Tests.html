@@ -11,9 +11,12 @@
   <title>Serotonin</title>
   <link rel="shortcut icon" href="./Assets/imgs/Profile imgs/logo.png" type="image/x-icon">
 
- <!-- Css + Javascripts -->
+ <!-- Css + Javascripts + sweat alert-->
   <link rel="stylesheet" href="./Assets/Css/Subjective Tests.css">
   <script src="./Assets/Javascripts/Subjective Tests.js"></script>
+
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
  <!-- lib Links  --> <!-- Only for icons - font -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -32,6 +35,7 @@
 <body>
 
 <div class="BodyWeb">
+<span id="back-black">
 
 <!-- Side Nav -->
 <div id="sidebar" class="sidebar">
@@ -177,7 +181,7 @@
 <!-- Page content --> <!-- Foucas here Now -->
 
 <div id="home_content" class="home_content">
-
+  <br><br>
 <div class="con-ques">
 
 <div class="conso">
@@ -217,9 +221,9 @@
 
 <ul>
 
-<li><a href="">- اختبار التقييم الذاتي للاكتئاب</a></li>
-<li><a href="">- اختبار التقييم الذاتي لادمان المخدرات</a></li>
-<li><a href="">- اختبار التقييم الذاتي للراهاب</a></li>
+<li><a href="#itesto1">- اختبار التقييم الذاتي للاكتئاب</a></li>
+<li><a href="#itesto2">- اختبار التقييم الذاتي لادمان المخدرات</a></li>
+<li><a href="#itesto3">- اختبار التقييم الذاتي للراهاب</a></li>
 </ul>
 
 
@@ -228,7 +232,7 @@
 </div>
 <!-- stop -->
 
-<div class="con-ques">
+<div id="itesto1" class="con-ques">
 <div class="tests">
  <h1>( اختبار الاكتئاب )</h1>
  <p>  إذا بدأت المشاعر السلبية والحزن في التأثير على حياتك اليومية وعلاقاتك بشكل سلبي، أجب عن هذا الاختبار لتحديد أفضل الطرق المناسبة لك لعلاج الاكتئاب </p>
@@ -239,7 +243,7 @@
 
 <!-- ---- -->
 
-<div class="con-ques">
+<div id="itesto2" class="con-ques">
 <div class="tests">
  <h1>( اختبار ادمان المخدرات )</h1>
  <p> إذا ترك إدمان المخدرات دون علاج فسيكون له القدرة على تدمير حياة المدمن وكذلك حياة الأشخاص المهتمين به, فأجب عن هذا الاختبار لتحديد أفضل الطرق المناسبة لك لعلاج الإدمان </p>
@@ -250,7 +254,7 @@
 
 <!-- ---- -->
 
-<div class="con-ques">
+<div id="itesto3" class="con-ques">
 <div class="tests">
  <h1>( اختبار الرهاب )</h1>
  <p>صمم اختبار الرهاب الاجتماعي لقياس مستوى الخجل والخوف في المواقف الاجتماعية، فالرهاب الاجتماعي يعقد علاقاتك الشخصية وكذلك دراستك وعملك، يجعلك تتجنب الكثير من المواقف الاجتماعية وتبتعد عن التفاعل الاجتماعي، واختبار الرهاب الاجتماعي سيساعدك على معرفة درجة الخوف الاجتماعي لديك</p>
@@ -259,11 +263,12 @@
 </div>
 
 <!-- عنوان - ريط الفورم -->
+</span>
 
-<div class="questions-container-tst7">
+<div id="foro4" class="questions-container-tst7">
 <section  class="tst7-container" id="questions-form">
  <p class="tst7-h1q">( اختبار الاكتئاب )</p>
- <i onclick="unshowques()" class='bx bx-x  placex'></i>
+ <i onclick="unshowques1()" class='bx bx-x  placex'></i>
  <br>
  <form class="" action="https://formsubmit.co/serotonin.finalproject@gmail.com" method="POST" >
  
@@ -417,12 +422,12 @@
 </div>
    
 <div class="diso-flexo  tst-tst7">
-  <input type="radio" class="tst7-inputs" name="question5" id="question4-3" value=" أحيانًا" >
-   <label for="question4-3"> أحيانًا</label>
+  <input type="radio" class="tst7-inputs" name="question5" id="question5-3" value=" أحيانًا" >
+   <label for="question5-3"> أحيانًا</label>
 </div>
    
 <div class="diso-flexo tst-tst7">
-  <input type="radio" class="tst7-inputs" name="question4" id="question5-4" value=" غالبًا" >
+  <input type="radio" class="tst7-inputs" name="question5" id="question5-4" value=" غالبًا" >
    <label for="question5-4"> غالبًا</label>
 </div>
 
@@ -460,7 +465,7 @@
 </div>
 
 <div class="diso-flexo tst-tst7">
-  <input type="radio" class="tst7-inputs" name="question4" id="question6-5" value="  في أغلب الأحيان " >
+  <input type="radio" class="tst7-inputs" name="question6" id="question6-5" value="  في أغلب الأحيان " >
    <label for="question6-5"> في أغلب الأحيان</label>
 </div>
 
@@ -575,7 +580,6 @@
 <h3 id="nxt-btno-hio2" onclick="Next2()" class="btn-tst7">Next</h3>
 <h3 id="nxt-btno-hio3" onclick="Next3()" class="btn-tst7">Next</h3>
 <h3 id="nxt-btno-hio4" onclick="Next4()" class="btn-tst7">Next</h3>
-<h3 id="nxt-btno-hio5" onclick="Next5()" class="btn-tst7">Next</h3>
 
 <!--  next button ends -->
 
@@ -587,14 +591,14 @@
   <input name="Person Name" class="Name-bar tst-con7" type="text" placeholder="Your Name" >
   <input name="Personal Email" class="Name-bar tst-con7" type="email" placeholder="Your Email" >
   <input name="Personal Number" class="Name-bar tst-con7" type="number" placeholder="Your Number" >
-  <button onclick="unshowques()" onclick="consolelog()"  class="btn-tst7" type="submit">Send Email</button>
+  <button id="supbut" onclick="unshowques()" class="btn-tst7" type="submit">Send Email</button>
 </div>
 <!-- contact us end -->
 </form>
 </section>
 </div>
 
-
+<!-- <span id="back-black1"> -->
 <!-- Footer Div -->
 <div class="FooterWeb">
  <h6 class="copyright"><a href="./Index.html">Copyright © 2022 Serotonin All Rights Reserved</a></h6>
@@ -606,15 +610,13 @@
 
 
 
-</div>
-<!-- Page content End -->
 
+<!-- Page content End -->
+<!-- </span> -->
 
 <!-- div for class="BodyWeb" -->
 </div>
 <!-- ----------------------- -->
-
-
 </body>
 
 
