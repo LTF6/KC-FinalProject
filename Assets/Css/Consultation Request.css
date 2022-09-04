@@ -307,6 +307,23 @@ span {
 }
 
 
+.btn-supp {
+ margin-left: 75%;
+ width: 100px;
+ height: 35px;
+ background-color: #1d1b31;
+ transition: all 0.4s ease-in-out;
+ border-radius: 12px;
+ margin-top: 15px;
+ line-height: 35px;
+}
+.btn-supp a {
+ color: #fff;
+ text-decoration: none;
+}
+.btn-supp:hover {
+ background-color: #bfbae3;
+}
 /* home content */
  
 

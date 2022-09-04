@@ -307,6 +307,23 @@ span {
 }
 
 
+.btn-supp {
+ margin-left: 75%;
+ width: 100px;
+ height: 35px;
+ background-color: #1d1b31;
+ transition: all 0.4s ease-in-out;
+ border-radius: 12px;
+ margin-top: 15px;
+ line-height: 35px;
+}
+.btn-supp a {
+ color: #fff;
+ text-decoration: none;
+}
+.btn-supp:hover {
+ background-color: #bfbae3;
+}
 /* home content */
  
 
@@ -314,7 +331,7 @@ span {
  position: absolute;
 
  width: 100% ;
- height: 640vh ;
+ height: 110vh ;
 
  display: flex;
  align-items: center;
@@ -340,8 +357,8 @@ span {
 }
 
 .container-maps {
- height: 700px ;
- width: 1200px;
+ height: 950px ;
+ width: 1260px;
  background-color: #f3f7fa;
  border-radius: 12px;
  border: #11101d solid 3px;
@@ -349,24 +366,26 @@ span {
  padding: 20px;
  display: flex;
  justify-content: center;
+ flex-direction: row;
 }
 
 .cards-map {
- width: 250px;
- height: 330px;
+ width: 290px;
+ height: 360px;
  background-color: #1d1b31;
  border-radius: 12px;
  align-items: center;
  padding: 5px;
  transition: all 0.5s ease-in-out;
  margin-left: 10px;
+ margin-bottom: 12px;
 }
 .cards-map:hover {
  scale: 1.05;
 }
 .cards-map h4 {
  text-align: center;
- margin-bottom: 10px;
+ margin-bottom: 20px;
 }
 .cards-map ul {
  direction: rtl;
@@ -374,11 +393,20 @@ span {
  color: #fff;
  text-align: right;
 }
+
+.cards-map ul li {
+ margin-bottom: 5px;
+}
+
 .cards-map iframe {
  border-radius: 8px;
 }
 
-
+.colum-cards {
+ display: flex;
+ flex-direction: column;
+ padding: 5px;
+}
 
 /* home content end */
 

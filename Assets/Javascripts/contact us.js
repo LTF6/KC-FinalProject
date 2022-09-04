@@ -88,7 +88,7 @@ if (document.getElementById("sidebar").classList.contains("active")) {
 
 function searchbtnclick() {
  document.getElementById("sidebar").classList = ("sidebar active")
-  
+   
  document.getElementById("logo-name").style.color = ("#11101d")
  document.getElementById("links_con").style.color = ("#11101d")
 
@@ -119,8 +119,8 @@ function searchbtnclick() {
  document.getElementById("name").style.display = ("none")
  document.getElementById("job").style.display = ("none")
  document.getElementById("log_out").style.display = ("none")
-
-   document.getElementById("topbtno").style.marginRight = ("100px")
+   
+ document.getElementById("topbtno").style.marginRight = ("100px")
     
 if (document.getElementById("sidebar").classList.contains("active")) {
    
@@ -161,80 +161,15 @@ if (document.getElementById("sidebar").classList.contains("active")) {
 }
 
 
-//  the real work
-function showques() {
- document.getElementById("questions-form").style.display = ( "block" )
-}
 
-// next Function
-function Next1() {
- document.getElementById("quests1").style.display = ("none")
- document.getElementById("quests2").style.display = ("none")
- document.getElementById("nxt-btno-hio").style.display = ("none")
-
- document.getElementById("quests3").style.display = ("block")
- document.getElementById("quests4").style.display = ("block")
- document.getElementById("nxt-btno-hio2").style.display = ("block")
-}
-
-
-function Next2() {
- document.getElementById("quests3").style.display = ("none")
- document.getElementById("quests4").style.display = ("none")
- document.getElementById("nxt-btno-hio2").style.display = ("none")
-
- document.getElementById("quests5").style.display = ("block")
- document.getElementById("quests6").style.display = ("block")
- document.getElementById("nxt-btno-hio3").style.display = ("block")
-}
-
-
-function Next3() {
- document.getElementById("quests5").style.display = ("none")
- document.getElementById("quests6").style.display = ("none")
- document.getElementById("nxt-btno-hio3").style.display = ("none")
- 
- document.getElementById("quests7").style.display = ("block")
- document.getElementById("quests8").style.display = ("block")
- document.getElementById("nxt-btno-hio4").style.display = ("block")
-}
-
-function Next4() {
- document.getElementById("quests7").style.display = ("none")
- document.getElementById("quests8").style.display = ("none")
- document.getElementById("nxt-btno-hio4").style.display = ("none")
- 
- document.getElementById("quests9").style.display = ("block")
- document.getElementById("contact-bar-tst").style.display = ("block")
-}
-
-function unshowques() {
- document.getElementById("questions-form").style.display = ( "none" )
-
+function done() {
  Swal.fire({
   position: 'center',
   icon: 'success',
-  title: ' Email has been sent successfully ',
-  showConfirmButton: false,
-  timer: 2000
- } )
- 
+ title: ' Email has been sent successfully ',
+ showConfirmButton: false,
+ timer: 2000
+} )
+   
 }
-
-function unshowques1() {
- document.getElementById("questions-form").style.display = ( "none" )
- 
- Swal.fire({
-  position: 'center',
-  icon: 'error',
-  title: ' Email has been stopped ',
-  showConfirmButton: false,
-  timer: 1500
- } )
-
-}
-
-
-function consolelog() {
-    console.log("js is workin ?");
-}
+   

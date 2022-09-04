@@ -11,10 +11,13 @@
   <title>Serotonin</title>
   <link rel="shortcut icon" href="./Assets/imgs/Profile imgs/logo.png" type="image/x-icon">
 
- <!-- Css + Javascripts -->
-  <link rel="stylesheet" href="./Assets/Css/Consultation Request.css">
-  <script src="./Assets/Javascripts/Consultation Request.js"></script>
+ <!-- Css + Javascripts + sweatalert -->
+  <link rel="stylesheet" href="./Assets/Css/Contact us.css">
+  <script src="./Assets/Javascripts/contact us.js"></script>
 
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
  <!-- lib Links  --> <!-- Only for icons - font -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
@@ -167,7 +170,7 @@
   <img src="./Assets/imgs/Profile imgs/logo.png" width="40px" height="40px"  alt="Serotonin logo"> 
    <div class="midnav-name" > Serotonin</div>
  </div>
- <h3 class="btn-supp"><a href="./contact-us.html">Contact us</a></h3>
+
 </div>
 
 <!-- Navbar End -->
@@ -178,8 +181,68 @@
 
 <div id="home_content" class="home_content">
 
-<br>
 
+
+<div class="formo-containero">
+
+    <h1>Contact us</h1>
+
+<form action="https://formsubmit.co/serotonin.finalproject2@gmail.com" method="POST">
+
+<div class="cono">
+
+
+<!-- سؤال 1 -->
+<section id="quests1">
+
+ <p class="mail-type">( نوع البريد الالكتروني )</p>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question1" id="question1-1" value=" استفسار" >
+   <label class="tst7-label1" for="question1-1"> استفسار</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question1" id="question1-2" value=" مشكلة" >
+   <label for="question1-2"> مشكلة</label>
+</div>
+
+<div class="diso-flexo  tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question1" id="question1-3" value=" اقتراح" >
+   <label for="question1-3"> اقتراح</label>
+</div>
+
+<div class="diso-flexo tst-tst7">
+  <input type="radio" class="tst7-inputs" name="question1" id="question1-4" value="طلب توضيف " >
+   <label for="question1-4">طلب توضيف</label>
+</div>
+
+</section>
+<!-- خلص سؤال 1 -->
+
+
+<div class="floato">
+ <div class="floatos">
+  <h2 class="tst-txt-cen">( ادخل معلوماتك هنا )</h2>
+
+  <input name="Person Name" type="text" placeholder="Your Name" >
+  <input name="Personal Email" type="email" placeholder="Your Email" >
+  <input class="sizo" name="The message" type="text" placeholder="The Massege" >
+  <button onclick="done()" id="supbut" class="btn-tst7" type="submit">Send Email</button>
+</div>
+</div>
+
+</form>
+
+</div>
+
+
+
+
+</div>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 <!-- Footer Div -->
 <div class="FooterWeb">
