@@ -331,7 +331,7 @@ span {
  position: absolute;
 
  width: 100% ;
- height: 640vh ;
+ height: 120vh ;
 
  display: flex;
  align-items: center;
@@ -352,10 +352,75 @@ span {
 
 /* the content */
 
-.container-home {
- height: 640vh;
+.container121 {
+ width: 1200px;
+ height: 500px;
+ margin : 50px ;
+ background-color: #f3f7fa;
+ border-radius: 12px;
+ border: #11101d solid 3px;
+ padding: 20px;
 }
 
+.container121 {
+ direction: rtl;
+}
+
+.container121 ul {
+ text-align: right;
+ list-style: none;
+ font-size: 23px;
+ margin-bottom: 7px;
+}
+
+.container121 ul h2 {
+ margin-left: 10px;
+}
+
+.appont {
+ width: 1200px;
+ height: 500px;
+ background-color: #11101d;
+ border-radius: 12px;
+ margin-bottom: 50px;
+ border: #bfbae3 solid 3px;
+ padding: 15px;
+ display: flex;
+ flex-direction: column;
+}
+.appont a {
+ color: #fff;
+ text-decoration: none;
+}
+.addapp {
+ width: 1170px;
+ height: 150px;
+ display: flex;
+ justify-content: center;
+ background-color: #1d1b31;
+ border-radius: 12px;
+ border: #bfbae3 solid 2px;
+ transition: all 0.5s ease-in-out;
+}
+.appont h1{
+ color: #fff;
+ margin-bottom: 7px;
+}
+.addapp div {
+ display: flex;
+ font-size: 50px;
+ margin-top: 45px;
+ transition: all 0.5s ease-in-out;
+}
+
+.addapp:hover {
+ background-color: #27253b;
+ color: #bfbae3;
+}
+.addapp:hover i {
+ background-color: #27253b;
+ color: #bfbae3;
+}
 /* home content end */
 
 
