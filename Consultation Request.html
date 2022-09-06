@@ -184,25 +184,100 @@
 <ul>
   <h2>( ملاحظات هامة )</h2>
 <li>- حجز الموعد بشكل دقيق </li>
-<li>- اختيار الطبيب الذي تريده</li>
+<li>- اختار الطبيب الذي تريده</li>
 <li>- ضع معلوماتك الشخصية بشكل صحيح</li>
 <li>- لا تشارك بيانات الحجز مع من لا تعرفهم</li>
 <li>- يجب الحضور قبل الموعد بنصف ساعة لأجراءات المستشفى</li>
-<li>- في حال حجزك لموعد لا يمكن الغائه الى عن التواصل مع الدعم</li>
-
+<li>- في حال حجزك لموعد لا يمكن الغائه الى عند التواصل مع الدعم</li>
 </ul>
 </div>
 
 <div id="addappont" class="appont">
 <h1>حجز موعد</h1>
 
-<a onclick="">
+<a onclick="requesto()">
 <div class="addapp"> <div>  <i class='bx bx-plus'></i>  </div>  </div>
 </a>
 
 
 
 </div>
+<div id="test">
+
+
+</div>
+
+
+<div id="i7jzo" class="i7jzz">
+
+<h1>( تعبئة بيانات )</h1>
+
+<div class="i7jzz-box">
+
+<div class="i7jzz-left">
+<h2>بيانات الحجز</h2>
+
+<input type="date" placeholder="التاريخ" id="CR-Date">
+
+<select name="Time" id="CR-Time" >
+  <option hidden selected disabled class="optins" value="">( وقت الموعد )</option>
+  <option class="optins" value="8:30 Am">8:30 Am</option>
+  <option disabled class="optins" value="9:00 Am"> 9:00 Am</option>
+  <option class="optins" value="9:30 Am">9:30 Am</option>
+  <option disabled class="optins" value="10:00 Am">10:00 Am</option>
+  <option disabled class="optins" value="10:30 Am">10:30 Am</option>
+
+</select>
+
+<!-- --------- -->
+
+<select name="Doctor" id="CR-Doc" >
+  <option hidden selected disabled class="optins" value="">( الطبيب )</option>
+  <option class="optins" value="عبدالله المطيري">عبدالله المطيري</option>
+  <option class="optins" value="محمد حسن">محمد حسن</option>
+  <option class="optins" value="سلمان البراك">سلمان البراك</option>
+  <option class="optins" value="حيدر البلوشي">حيدر البلوشي</option>
+  <option disabled class="optins" value=""> ( غير متوفر ) زياد خلف</option>
+
+</select>
+
+<select name="people-num" id="CR-PeoNum" >
+ <option hidden selected disabled class="optins" value="">( عدد المرافقين )</option>
+ <option class="optins" value="0">0</option>
+ <option class="optins" value="1">1</option>
+ <option class="optins" value="2">2</option>
+ <option class="optins" value="3">3</option>
+
+</select>
+
+</select>
+<select name="location" id="CR-loca" >
+ <option hidden selected disabled class="optins" value="">( موقع الموعد )</option>
+ <option class="optins" value="1">مستشفى الكويت للصحة النفسية</option>
+ <option class="optins" value="2"> مستشفى الطب النفسي الشرعي</option>
+ <option class="optins" value="3">AlManara</option>
+ <option disabled class="optins" value="4">(Full)مستشفى الطب النفسي</option>
+ <option disabled class="optins" value="5">(Full)Al-Sidra Association</option>
+
+</select>
+</div>
+<!-- --------------------- -->
+<div class="i7jzz-right">
+<h2>البيانات الشخصية</h2>
+
+<input type="text" placeholder="ادخل اسمك الثلاثي" id="Third-Name">
+<input class="numtype" type="number" placeholder="عمرك " id="Age">
+<input type="text" placeholder=" البريد الالكتروني الخاص بك" id="Your-Email">
+<input class="numtype" type="number" placeholder="رقم هاتفك" id="Your-Num">
+
+</div>
+</div>
+
+<button onclick="TransInfos()" class="btn-7jz">Confirm Consultation Request</button>
+</div>
+
+
+
 
 <!-- Footer Div -->
 <div class="FooterWeb">

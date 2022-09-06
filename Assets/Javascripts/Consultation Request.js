@@ -160,3 +160,31 @@ if (document.getElementById("sidebar").classList.contains("active")) {
 }
 }
 
+function requesto() {
+ document.getElementById("i7jzo").style.display = ("block")
+}
+
+let CRDate = document.getElementById("CR-Date").value ;
+let CRDoc = document.getElementById("CR-Doc").value;
+let CRPeopleNumber = document.getElementById("CR-PeoNum").value;
+let CRLocation = document.getElementById("CR-loca").value;
+
+let ThirdName = document.getElementById("Third-Name").value;
+let PersonName = document.getElementById("Age").value;
+let YourEmail = document.getElementById("Your-Email").value;
+let YourNumber = document.getElementById("Your-Num").value;
+
+let InfoDiv = document.getElementById("test")
+
+function TransInfos() {
+
+    InfoDiv.innerHTML += `
+<div>
+
+<h3>${ThirdName.value}</h3>
+
+</div>
+
+
+`
+}
