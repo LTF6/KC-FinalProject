@@ -164,27 +164,94 @@ function requesto() {
  document.getElementById("i7jzo").style.display = ("block")
 }
 
-let CRDate = document.getElementById("CR-Date").value ;
-let CRDoc = document.getElementById("CR-Doc").value;
-let CRPeopleNumber = document.getElementById("CR-PeoNum").value;
-let CRLocation = document.getElementById("CR-loca").value;
+ let CRDate = document.getElementById("CR-Date") ;
+let CRDoc = document.getElementById("CR-Doc").onchange;
+let CRPeopleNumber = document.getElementById("CR-PeoNum").onchange ;
+let CRLocation = document.getElementById("CR-loca").onchange ;
 
-let ThirdName = document.getElementById("Third-Name").value;
-let PersonName = document.getElementById("Age").value;
-let YourEmail = document.getElementById("Your-Email").value;
-let YourNumber = document.getElementById("Your-Num").value;
+let ThirdName = document.getElementById("ThirdNameo") ;
+let PersonName = document.getElementById("Age").value ;
+let YourEmail = document.getElementById("Your-Email").value ;
+let YourNumber = document.getElementById("YourNumo") ;
 
-let InfoDiv = document.getElementById("test")
 
+// TransInfos()
 function TransInfos() {
 
-    InfoDiv.innerHTML += `
-<div>
+let dateEntered = new Date(CRDate.value);
+let nameEntered = ThirdName.value
 
-<h3>${ThirdName.value}</h3>
 
+ document.getElementById("section1").innerHTML +=`
+ <div class="theappo">
+
+<div class="left00"> 
+ <ul>
+
+  <li>${"الموقع : "+Locationf.location[Locationf.location.selectedIndex].text}</li>
+
+  <li> التاريخ : ${dateEntered}
+
+  <li>${` الوقت : `+TheTime.Time[TheTime.Time.selectedIndex].text}</li>
+
+  <li>${`الطبيب : `+DoctorName.Doctor[DoctorName.Doctor.selectedIndex].text}</li>
+
+ </ul>
 </div>
 
+<div class="right00"> 
+ <ul>
 
-`
+  <li> الاسم : ${nameEntered}</li>
+  <li>رقم الهاتف : ${YourNumber.value}</li>
+  <li>${`عدد المرافقين : `+PeopleNumber.peoplesnum[PeopleNumber.peoplesnum.selectedIndex].text}</li>
+
+ </ul>
+</div>
+
+</div> 
+  `
+
+ document.getElementById("i7jzo").style.display = ("none")
+ 
+ Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: ' Consultation Request is Done ',
+    showConfirmButton: false,
+    timer: 2000
+   } )
 }
+
+function remove() {
+ document.getElementById("i7jzo").style.display = ( "none" )
+ 
+ Swal.fire({
+  position: 'center',
+  icon: 'error',
+  title: ' Consultation Request has been stopped ',
+  showConfirmButton: false,
+  timer: 1500
+ } )
+}
+// function gfd() {
+// document.getElementById("section1").innerHTML += `<div class="theappo">
+// موعد : ${dateEntered}
+//  </div> `
+// }
+
+
+
+// ${"الموقع : "+Locationf.location[Locationf.location.selectedIndex].text}
+// ${`الطبيب : `+DoctorName.Doctor[DoctorName.Doctor.selectedIndex].text}
+
+// ${`التاريخ : `+TheDate.Date[TheDate.Date.selectedIndex].text 
+//   `/ الوقت : `+TheTime.Time[TheTime.Time.selectedIndex].text}
+
+// ------------------
+
+// ${`عدد المرافقين : `+PeopleNumber.people-num[PeopleNumber.people-num.selectedIndex].text}
+// ${"الاسم : "+Infos1.TheName[Infos1.TheName.selectedIndex].text}
+// رقم الهاتف : ${YourNumber.value}
+
+

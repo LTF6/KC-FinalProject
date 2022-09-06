@@ -331,7 +331,7 @@ span {
  position: absolute;
 
  width: 100% ;
- height: 120vh ;
+ height: 140vh ;
 
  display: flex;
  align-items: center;
@@ -379,7 +379,7 @@ span {
 
 .appont {
  width: 1200px;
- height: 500px;
+ height: 700px;
  background-color: #11101d;
  border-radius: 12px;
  margin-bottom: 50px;
@@ -393,13 +393,14 @@ span {
  text-decoration: none;
 }
 .addapp {
- width: 1170px;
+ width: 1160px;
  height: 150px;
  display: flex;
  justify-content: center;
  background-color: #1d1b31;
  border-radius: 12px;
  border: #bfbae3 solid 2px;
+ margin-bottom: 15px;
  transition: all 0.5s ease-in-out;
 }
 .appont h1{
@@ -412,11 +413,15 @@ span {
  margin-top: 45px;
  transition: all 0.5s ease-in-out;
 }
+.addapp i {
+  transition: all 0.5s ease-in-out;
+}
 
 .addapp:hover {
  background-color: #27253b;
  color: #bfbae3;
 }
+
 .addapp:hover i {
  background-color: #27253b;
  color: #bfbae3;
@@ -513,6 +518,10 @@ span {
  -webkit-appearance: none;
 }
 
+.i7jzz-left form {
+ margin-right: 50px;
+}
+
 .optins {
  min-width: 100px;
  min-height: 35px;
@@ -521,7 +530,6 @@ span {
  background-color: #f9f9f9;
 
 }
-
 
 .btn-7jz{
  width: 190px;
@@ -535,6 +543,98 @@ span {
 .btn-7jz:hover {
  border: #27253b 2px solid;
  background-color: #bfbae3;
+}
+
+.theappo {
+ height: 150px;
+ margin-bottom: 15px;
+
+ display: flex;
+ justify-content: center;
+
+ color: #fff;
+ background-color: #1d1b31;
+ border-radius: 12px;
+ border: #bfbae3 solid 2px;
+
+ transition: all 0.5s ease-in-out;
+}
+#section1 {
+ display: flex;
+ padding: 5px;
+}
+
+.left00 {
+ margin-right: 100px;
+ padding: 10px;
+ width: 500px;
+ height: 140px;
+ 
+ text-align: right;
+
+ float: left;
+ display: block;
+}
+
+.left00 ul li {
+ list-style: none;
+ direction: rtl;
+ margin-bottom: 3px;
+}
+
+.right00 {
+ margin-left: 165px;
+ padding: 10px;
+ width: 350px;
+ height: 140px;
+ 
+ text-align: right;
+
+ float: right;
+ display: block;
+}
+
+.right00 ul li {
+ list-style: none;
+ direction: rtl;
+ margin-bottom: 5px;
+ padding-right: 20px;
+}
+
+
+.flexit {
+ display: flex;
+ flex-direction: column;
+
+}
+
+.requestoo {
+ display: none;
+}
+
+.i7jz-top {
+ display: flex;
+ justify-content: center;
+}
+.i7jz-top button {
+ width: 40px;
+ height: 40px;
+ margin-top: 10px;
+
+ position: absolute;
+ top: 3%;
+ right: 3%;
+
+ border-radius: 12px;
+ border: #bfbae3 2px solid;
+ background-color: #11101d;
+ color: #fff;
+ font-size: 22px;
+ transition: all 0.4s ease-in-out;
+}
+.i7jz-top button:hover {
+ background-color: #bfbae3;
+ border: #11101d 2px solid;
 }
 /* home content end */
 

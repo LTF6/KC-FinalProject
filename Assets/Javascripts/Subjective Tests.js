@@ -3,6 +3,7 @@ function log() {
 let JsTest = ("Javascript is workin noice")
 console.log(JsTest);
 }
+
 // Workin test end
 
 
