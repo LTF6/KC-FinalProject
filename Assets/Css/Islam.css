@@ -330,7 +330,7 @@ span {
  position: absolute;
 
  width: 100% ;
- height: 640vh ;
+ height: 69vh ;
 
  display: flex;
  align-items: center;
@@ -353,6 +353,17 @@ span {
 
 .container-home {
  height: 640vh;
+}
+
+.sooon {
+ color: #1d1b31;
+ font-size: 179.9px;
+ text-shadow: #bfbae3 10px 10px 10px;
+ transition: all 0.7s ease-in-out;
+}
+.sooon:hover {
+ color: #bfbae3;
+ text-shadow: #1d1b31 10px 10px 10px;
 }
 
 /* home content end */
