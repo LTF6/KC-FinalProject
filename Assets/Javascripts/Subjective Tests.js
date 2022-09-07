@@ -6,7 +6,6 @@ console.log(JsTest);
 
 // Workin test end
 
-
 // Side javas
 
 let btn = document.getElementById("btn")

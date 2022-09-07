@@ -13,7 +13,7 @@
 
  <!-- Css + Javascripts -->
   <link rel="stylesheet" href="./Assets/Css/Index.css">
-  <script src="./Assets/Javascripts/Index.js"></script>
+  <script src="./Assets/Javascripts/Index.js" defer></script>
 
  <!-- lib Links  --> <!-- Only for icons - font -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -57,16 +57,16 @@
 <ul class="nav_list">
 
 <!-- search - clicker -->
-<li>
+<li id="Search0">
 
   <i onclick="searchbtnclick()" id="bx_search" class='bx bx-search' ></i>
-   <input  type="text" placeholder="Type to search">
+   <input id="search-input" type="text" placeholder="Type to search">
 
  <span id="small_side0" class="Tooltip">Search</span>
 </li>
 
 <!-- Home -->
-<li>
+<li class="list-group" id="Home0">
  <a  href="./Index.html">
   <i class='bx bx-home' ></i>
    <div id="links_name" class="links_name">Home</div>
@@ -76,7 +76,7 @@
     
 
 <!-- Psychological health -->
-<li>
+<li class="list-group" id="Psyhea0">
  <a  href="./Psychological Health.html">
   <i class='bx bx-dna'></i>
    <div id="links_name1" class="links_name">Psychological Health</div>
@@ -86,7 +86,7 @@
 
 
 <!-- Mental Health -->
-<li>
+<li class="list-group" id="Mental0">
  <a  href="./Mental Health.html">
   <i class='bx bx-brain'></i>
    <div id="links_name2" class="links_name">Mental Health</div>
@@ -96,7 +96,7 @@
    
 
 <!-- Consultation request -->
-<li>
+<li class="list-group" id="request0">
  <a  href="./Consultation Request.html">
   <i class='bx bxs-coupon' ></i>
    <div id="links_name3" class="links_name">Consultation Request</div>
@@ -106,7 +106,7 @@
    
 
 <!-- Subjective Tests -->
-<li>
+<li class="list-group" id="test0">
  <a  href="./Subjective Tests.html">
   <i class='bx bx-folder' ></i>
    <div id="links_name4" class="links_name">Subjective Tests</div>
@@ -116,7 +116,7 @@
 
 
 <!-- Locations -->
-<li>
+<li class="list-group" id="location0">
  <a  href="./Locations.html">
   <i class='bx bx-map'></i>
    <div id="links_name5" class="links_name">Locations</div>
@@ -126,7 +126,7 @@
 
 
 <!-- Islam -->
-<li>
+<li class="list-group" id="islam0">
  <a  href="./Islam.html">
   <i class='bx bx-heart' ></i>
    <div id="links_name6" class="links_name">Islam</div>
@@ -309,6 +309,7 @@
 <div class="con-img"> <img src="./Assets/imgs/Sections imgs/brain.png" width="300px"  alt="brain img"> </div>
 
 <h1><a href="./Psychological Health.html">( Psychological Health )</a></h1>
+<h1>السلام</h1>
  <li>1 - هذا القسم يتحدث عن الامراض النفسية</li>
  <li>2 -بأمكانك ايجاد المرض و وصفه و بعض الحلول المقترحة </li>
  <li>3 - تفاصيل الامراض النفسية و معلومات عنها </li>
@@ -438,6 +439,5 @@
 
 
 </body>
-
 
 </html>

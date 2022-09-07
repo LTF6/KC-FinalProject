@@ -5,7 +5,6 @@ console.log(JsTest);
 }
 // Workin test end
 
-
 // Side javas
 
 let btn = document.getElementById("btn")
@@ -165,9 +164,24 @@ if (document.getElementById("sidebar").classList.contains("active")) {
 }
 }
    
-   
-   
 
+ document.getElementById("search-input").addEventListener("input", filterList);
 
+function filterList() {
+ let searchInput = document.getElementById("search-input");
+ let filter = searchInput.value.toLowerCase();
+ let listItems = document.querySelectorAll(".list-group");
 
+listItems.forEach((item) => {
 
+ let text = item.textContent;
+
+if (text.toLowerCase().includes(filter.toLowerCase())) {
+        item.style.display = ("");
+} else {
+    item.style.display = ("none");
+
+}
+
+ });
+}
